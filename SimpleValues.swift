@@ -45,9 +45,23 @@ shoppingList.append("blue paint") // 배열에 추가
 
 // Dictionary
 let emptyDictionary: [String: Float] = [:] // 빈 딕셔너리
-var occupations = [
+let occupations = [
     "Malcolm": "Captain",
     "Kaylee": "Mechanic",
  ]
 occupations["Kaylee"] = "Developer" // key로 접근
 occupations["Jayne"] = "Public Relations" // 딕셔너리에 추가
+
+// Tuple
+// 순서 있는 열거 like Array
+// 하지만 서로 다른 타입 가능, 길이 고정
+let simpleTuple1 : (type1, type2, ...) = ( value1, value2, ...)
+let simpleTuple2 = ( value1, value2, ...) // 타입 추론 가능
+let namedTuple: (model: String, color: String, storage: Int) // 파라미터 이름
+let (_, color, storage) = ("iPhone13", "starlight", 256) // 여러 변수로 받기 가능. 생략 시 _
+print(color)
+print(storage)
+
+// an empty interval
+let empty = 0.0..<0.0
+empty.contains(1)
