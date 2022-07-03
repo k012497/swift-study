@@ -14,6 +14,8 @@ let oranges = 1
 
 // -- EX) Create a constant with an explicit type of Float and a value of 4.
 let value: Float = 4
+// Float : 32비트 부동 소수
+// Double: 64비트 부동소수
 
 // convert a value to a different type -> make an instance!
 let label = "The width is "
